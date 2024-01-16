@@ -1,8 +1,6 @@
 package org.example;
 
-import java.io.BufferedReader;
-import java.io.FileReader;
-import java.io.IOException;
+import java.io.*;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -26,23 +24,24 @@ public class FileProcessing {
     }
 
     private List<String> readFiles(String path) {
-        List<String> stringList = new ArrayList<>();
-        try (BufferedReader buffer = new BufferedReader(new FileReader(path))) {
+        List<String> list = new ArrayList<>();
+        try (BufferedReader buffer = new BufferedReader(new InputStreamReader(new FileInputStream(path), "Cp1251"))){
             for(;;) {
                 String line = buffer.readLine();
                 if (line == null) {
                     break;
                 }
-                stringList.add(line);
+                list.add(line);
             }
         } catch (IOException e) {
             System.out.println(e.getMessage());
             return List.of();
         }
-        if (stringList.isEmpty()) {
-            System.out.println(path + " - файл пуст!");
+        if (list.isEmpty()) {
+            System.out.println(path + " - empty file!");
+            return List.of();
         }
-        return stringList;
+        return list;
     }
 
     private void checkingAndRecordingData(List<String> data) {
