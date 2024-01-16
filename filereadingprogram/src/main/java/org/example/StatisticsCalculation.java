@@ -18,6 +18,8 @@ public class StatisticsCalculation {
     }
 
     public void briefStatistics() {
+        delimiter();
+        System.out.println("Brief statistics:");
         if (!integerList.isEmpty()) {
             delimiter();
             System.out.println("Count of elements in a file with integers :" + integerList.size());
@@ -33,6 +35,8 @@ public class StatisticsCalculation {
     }
 
     public void fullStatistics() {
+        delimiter();
+        System.out.println("Full statistics:");
         if (!integerList.isEmpty()) {
             delimiter();
             System.out.println("File statistics with integers:");
@@ -83,8 +87,8 @@ public class StatisticsCalculation {
                 .average();
         System.out.println("Minimum value: " + minValue);
         System.out.println("Maximum value: " + maxValue);
-        System.out.println("Sum of numbers: " + String.format("%.4f", sumValue));
-        System.out.println("Average value: " + String.format("%.4f", averageValue.getAsDouble()));
+        System.out.println("Sum of numbers: " + sumValue);
+        System.out.println("Average value: " + averageValue.getAsDouble());
     }
     private void fullStatisticsOnIntegers() {
         long minValue = integerList.stream()
@@ -106,7 +110,7 @@ public class StatisticsCalculation {
         System.out.println("Minimum value: " + minValue);
         System.out.println("Maximum value: " + maxValue);
         System.out.println("Sum of numbers: " + sumValue);
-        System.out.println("Average value: " + String.format("%.2f", averageValue.getAsDouble()));
+        System.out.println("Average value: " + averageValue.getAsDouble());
     }
 
     private void delimiter() {

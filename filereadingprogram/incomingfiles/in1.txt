@@ -5,5 +5,4 @@ Lorem ipsum dolor sit amet
 consectetur adipiscing
 -0.001
 тестовое задание
-100
-45
+100500
