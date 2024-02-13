@@ -1,0 +1,7 @@
+
+=	java:S131""Add a default case to this switch.(ùé 8Ôı‘•Ú1
+X	java:S125"<This block of commented-out lines of code should be removed.(àÉº8Õı‘•Ú1
+Q
+java:S1068"5Remove this unused "DEFAULT_SAVE_PATH" private field.(´á¸f8õÃ•Ú1
+O
+java:S11447"2Remove this unused private "writingInFile" method.(‡Îˆ¤8¾°œ•Ú1

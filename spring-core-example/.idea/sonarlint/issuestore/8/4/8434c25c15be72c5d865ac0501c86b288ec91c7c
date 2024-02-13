@@ -1,0 +1,9 @@
+
+>
+java:S1643"Use a StringBuilder instead.(­¡ö¤úÿÿÿÿ8 êœñÙ1
+Z
+java:S6353"=Use concise character class syntax '\\D' instead of '[^0-9]'.(àª§œ8°êœñÙ1
+H
+java:S1481"+Remove this unused "result" local variable.(ìş“8ÄµñÙ1
+G
+java:S2116&"%Use "Arrays.toString(array)" instead.(É¾òúÿÿÿÿ8·êœñÙ1
